@@ -38,6 +38,8 @@ elif st.session_state.page=='upload':
         st.image(image,caption='Raw Satellite image')
         if st.button("Run model",type='primary'):
             img_array=image_processor(uploaded_image)
-            prediction=model.predict(img_array)
-            st.image(prediction)
+            predicted_image=model.predict(img_array)
+            st.image(predicted_image,caption='Mapped Forest Cover')
+    if st.button("Back",type='secondary'):
+        st.session_state.page='landing'
 
