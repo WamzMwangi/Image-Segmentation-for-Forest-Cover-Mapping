@@ -20,11 +20,15 @@ def image_processor(uploaded_image):
     img = np.expand_dims(img, axis=0)
     return img
 
+#user input section
+col1,col2=st.columns(2)
 uploaded_image=st.file_uploader("Upload your satellite image here")
 if uploaded_image is not None:
     image=Image.open(uploaded_image)
-    st.image(image,caption='Raw Satellite image')
+    with col1:
+        st.image(image,caption='Raw Satellite image')
     if st.button("Run model",type='primary'):
         img_array=image_processor(uploaded_image)
         predicted_image=model.predict(img_array)
-        st.image(predicted_image,caption='Mapped Forest Cover')
+        with col2:
+            st.image(predicted_image,caption='Mapped Forest Cover')
