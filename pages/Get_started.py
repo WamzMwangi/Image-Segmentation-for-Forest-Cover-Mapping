@@ -27,6 +27,10 @@ def image_processor(uploaded_image):
     img = np.expand_dims(img, axis=0)
     return img
 
+def forested_area_estimation(threshold_mask):
+    forested_area=np.sum(threshold_mask)*30*30
+    forested_area=forested_area/1000000
+    return forested_area
 
 #user input section
 col1,col2=st.columns(2)
@@ -43,4 +47,7 @@ if uploaded_image is not None:
         ret,threshold_image=cv2.threshold(predicted_mask_uint8,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
         with col2:
             st.image(threshold_image,caption='Mapped Forest Cover')
+            forest_area=forested_area_estimation(threshold_image)
+            st.write(f"Forested Area: {forest_area:.2f} km²")
+        
 
