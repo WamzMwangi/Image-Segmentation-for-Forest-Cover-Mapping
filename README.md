@@ -22,10 +22,18 @@ Table of Contents
 This project will evaluate the performance of two semantic segmentation models in identifying forest cover from satellite images
 
 ## 2.Data
-The dataset used for this project consists of satellite images and their corresponding masks, where each mask labels the pixels as either forest or non-forest as seen in th eimages below
+The dataset used for this project consists of satellite images and their corresponding masks, where each mask labels the pixels as either forest or non-forest as seen in the sample images below
 
-| Sample Image 1 | Sample Image 2 |
+| Satellite Image | Coresponding mask |
 |:--------------:|:--------------:|
 | ![Satellite Image](./images/134465_sat_41.jpg) | ![Annotated mask with forest and non-forest area](./masks/134465_mask_41.jpg) |
 
+## 3. Model Architecture
+This project implements two computer vision models for the segmentation task, that is a fully convolutional network and the Unet architecture. This section will explain the architecture of each.
+
+### Fully Convolutional Network
+Unlike the traditional Convolutional Neural Network (CNNs), FCNs are only comprised on convolutional layers and do not have a fully conected layer. This means they are able to retain spatial information on top of feature extraction.
+A FCN consists of 2 main parts:
+1. Downsampling path(Encoder)
+2. Upsampling path (Decoder)
 
