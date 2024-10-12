@@ -14,7 +14,8 @@ st.write("""
 
          **Simply upload a satellite image and get accurate forest cover maps in just a click of a button!**
          """)
-landing_page_image=Image.open(r'C:\Users\Admin\Desktop\Capstone_project_research\forest_label.webp')
+landing_page_image=Image.open(r'C:\Users\Admin\Desktop\Capstone_project_research\Results\forest_label.webp')
+
 st.image(landing_page_image,caption=None,use_column_width='auto')
 st.sidebar.success("Navigate App here")
 
