@@ -23,5 +23,9 @@ This project will evaluate the performance of two semantic segmentation models i
 
 ## 2.Data
 The dataset used for this project consists of satellite images and their corresponding masks, where each mask labels the pixels as either forest or non-forest as seen in th eimages below
-![Sample Satellite Image](./images/134465_sat_41.jpg)
+
+| Sample Image 1 | Sample Image 2 |
+|:--------------:|:--------------:|
+| ![Satellite Image](./images/134465_sat_41.jpg) | ![Annotated mask with forest and non-forest area](./masks/134465_mask_41.jpg) |
+
 
