@@ -1,3 +1,4 @@
 {
-    "python.REPL.enableREPLSmartSend": false
+       
+    "python.pythonPath":"C:\\Users\\Pula Advisors\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
 }
