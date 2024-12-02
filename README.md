@@ -35,5 +35,12 @@ This project implements two computer vision models for the segmentation task, th
 Unlike the traditional Convolutional Neural Network (CNNs), FCNs are only comprised on convolutional layers and do not have a fully conected layer. This means they are able to retain spatial information on top of feature extraction.
 A FCN consists of 2 main parts:
 1. Downsampling path(Encoder)
-2. Upsampling path (Decoder)
+The encoding path is made up of several convolutional layers, which extract features from the input image while reducing its spatial dimensions (low resolution).
+3. Upsampling path (Decoder)
+The decoding path is made up of several transpose convolutional layers,that increase the spatial dimensions of the feature map-output of the convolutional layer.
+
+### Unet Model
+The Unet model is similar to FCN in that it is also comprised on a downsampling and upsampling path. However, its definitive characteristic is skip connections. Skip connections reintroduces features into the upsampling path, by joining the feature map from every encoder is incorporated in its corresponding decoder.
+
+## 4. Evaluation metrics
 
