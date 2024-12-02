@@ -41,6 +41,6 @@ The decoding path is made up of several transpose convolutional layers,that incr
 
 ### Unet Model
 The Unet model is similar to FCN in that it is also comprised on a downsampling and upsampling path. However, its definitive characteristic is skip connections. Skip connections reintroduces features into the upsampling path, by joining the feature map from every encoder is incorporated in its corresponding decoder.
- ![Unet Mode Architecture](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png) 
+ ![Unet Mode Architecture](C:\Users\Pula Advisors\Desktop\Image-Segmentation-for-Forest-Cover-Mapping\unet_image) 
 ## 4. Evaluation metrics
 
