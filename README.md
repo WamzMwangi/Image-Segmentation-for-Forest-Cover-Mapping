@@ -51,6 +51,9 @@ The Unet model is similar to FCN in that it is also comprised on a downsampling 
 During training, each model was evaluated based on pixel accuracy, that is the percentage of pixels in the image which were correctly classified either as forested or non-forested areas. After hyperparameter tuning, the best performing model was then evaluated based on both accuracy and intersection over union.
 
 ## 5. Model Performance
+#### Performance of the FCN model
+ <img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+#### Performance of the Unet Model
 
 ## 6. Contributing
 
