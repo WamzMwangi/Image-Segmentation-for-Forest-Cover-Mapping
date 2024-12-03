@@ -1,5 +1,4 @@
-# Semantic Image Segmentation for Forest Cover Mapping#
-
+# Semantic Image Segmentation for Forest Cover Mapping
 This project implements an image segmentation model to map forest cover from satellite images using deep learning techniques. The goal is to accurately distinguish between forested and non-forested areas, providing insights into deforestation and land use patterns.
 
 Table of Contents
@@ -10,8 +9,7 @@ Table of Contents
 4. [Evaluation](#evaluation)
 5. [Model Performance](#model-performance)
 6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact Information](#contact-information)
+7. [Contact Information](#contact-information)
 
 ## 1. Problem Statement
   Accurate information on forest cover is important for supporting forest conservation and management efforts. Traditional methods of determining forest cover such as ground-based surveys are very tedious, expensive and time consuming.
@@ -52,11 +50,18 @@ During training, each model was evaluated based on pixel accuracy, that is the p
 
 ## 5. Model Performance
 #### Performance of the FCN model
- <img src=".\Results\FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"\>
+ <img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
 #### Performance of the Unet Model
-<img src="./Results/Unetlearningcurves.png" alt="Learning curve of the FCN" width="350"/>
-## 6. Contributing
+<img src="./Results/Unet_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
 
-## 7. License
+## 6. Contributing
+1. Fork & clone the repo locally
+2. Create a new branch
+3. Make changes on your branch
+4. Open a pull request and submit your work for review
+   
+## 7. Contact Information
+Please reach me via email at: mwangi25.mercy@gmail.com
+
 
 
