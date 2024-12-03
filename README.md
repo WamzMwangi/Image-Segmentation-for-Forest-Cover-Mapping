@@ -8,7 +8,7 @@ Table of Contents
 2. [Data](#data)
 3. [Model Architecture](#model-architecture)
 4. [Evaluation](#evaluation)
-5. [Results](#results)
+5. [Model Performance](#model-performance)
 6. [Contributing](#contributing)
 7. [License](#license)
 8. [Contact Information](#contact-information)
@@ -47,5 +47,13 @@ The Unet model is similar to FCN in that it is also comprised on a downsampling 
 
  <img src="./Results/unet_image.png" alt="U Net Model Architecture" width="300"/>
  
-## 4. Evaluation metrics
+## 4. Evaluation 
+During training, each model was evaluated based on pixel accuracy, that is the percentage of pixels in the image which were correctly classified either as forested or non-forested areas. After hyperparameter tuning, the best performing model was then evaluated based on both accuracy and intersection over union.
+
+## 5. Model Performance
+
+## 6. Contributing
+
+## 7. License
+
 
