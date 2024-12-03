@@ -52,7 +52,7 @@ During training, each model was evaluated based on pixel accuracy, that is the p
 
 ## 5. Model Performance
 #### Performance of the FCN model
- <img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+ <img src=".\Results\FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"\>
 #### Performance of the Unet Model
 <img src="./Results/Unetlearningcurves.png" alt="Learning curve of the FCN" width="350"/>
 ## 6. Contributing
