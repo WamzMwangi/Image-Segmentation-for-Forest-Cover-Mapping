@@ -38,9 +38,13 @@ A FCN consists of 2 main parts:
 The encoding path is made up of several convolutional layers, which extract features from the input image while reducing its spatial dimensions (low resolution).
 3. Upsampling path (Decoder)
 The decoding path is made up of several transpose convolutional layers,that increase the spatial dimensions of the feature map-output of the convolutional layer.
- ![FCN Model Architecture](./Results/FCN_image.png) 
+
+
+ <img src="./Results/FCN_image.png" alt="FCN Model Architecture" width="300"/>
+
 ### Unet Model
 The Unet model is similar to FCN in that it is also comprised on a downsampling and upsampling path. However, its definitive characteristic is skip connections. Skip connections reintroduces features into the upsampling path, by joining the feature map from every encoder is incorporated in its corresponding decoder.
+
  ![Unet Mode Architecture](./Results/unet_image.png) 
 ## 4. Evaluation metrics
 
