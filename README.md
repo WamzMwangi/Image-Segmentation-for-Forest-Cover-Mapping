@@ -1,5 +1,4 @@
-# Semantic Image Segmentation for Forest Cover Mapping#
-
+# Semantic Image Segmentation for Forest Cover Mapping
 This project implements an image segmentation model to map forest cover from satellite images using deep learning techniques. The goal is to accurately distinguish between forested and non-forested areas, providing insights into deforestation and land use patterns.
 
 Table of Contents
@@ -8,10 +7,9 @@ Table of Contents
 2. [Data](#data)
 3. [Model Architecture](#model-architecture)
 4. [Evaluation](#evaluation)
-5. [Results](#results)
+5. [Model Performance](#model-performance)
 6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact Information](#contact-information)
+7. [Contact Information](#contact-information)
 
 ## 1. Problem Statement
   Accurate information on forest cover is important for supporting forest conservation and management efforts. Traditional methods of determining forest cover such as ground-based surveys are very tedious, expensive and time consuming.
@@ -38,9 +36,32 @@ A FCN consists of 2 main parts:
 The encoding path is made up of several convolutional layers, which extract features from the input image while reducing its spatial dimensions (low resolution).
 3. Upsampling path (Decoder)
 The decoding path is made up of several transpose convolutional layers,that increase the spatial dimensions of the feature map-output of the convolutional layer.
- ![FCN Model Architecture](Results\FCN_image.png) 
+
+
+ <img src="./Results/FCN_image.png" alt="FCN Model Architecture" width="300"/>
+
 ### Unet Model
 The Unet model is similar to FCN in that it is also comprised on a downsampling and upsampling path. However, its definitive characteristic is skip connections. Skip connections reintroduces features into the upsampling path, by joining the feature map from every encoder is incorporated in its corresponding decoder.
- ![Unet Mode Architecture](Results\unet_image.png) 
-## 4. Evaluation metrics
+
+ <img src="./Results/unet_image.png" alt="U Net Model Architecture" width="300"/>
+ 
+## 4. Evaluation 
+During training, each model was evaluated based on pixel accuracy, that is the percentage of pixels in the image which were correctly classified either as forested or non-forested areas. After hyperparameter tuning, the best performing model was then evaluated based on both accuracy and intersection over union.
+
+## 5. Model Performance
+#### Performance of the FCN model
+ <img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+#### Performance of the Unet Model
+<img src="./Results/Unet_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+
+## 6. Contributing
+1. Fork & clone the repo locally
+2. Create a new branch
+3. Make changes on your branch
+4. Open a pull request and submit your work for review
+   
+## 7. Contact Information
+Please reach me via email at: mwangi25.mercy@gmail.com
+
+
 
