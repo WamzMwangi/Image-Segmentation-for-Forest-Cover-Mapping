@@ -14,12 +14,8 @@ st.write("""
 
          **Simply upload a satellite image and get accurate forest cover maps in just a click of a button!**
          """)
-landing_page_image=Image.open(r'C:\Users\Admin\Desktop\Capstone_project_research\Results\forest_label.webp')
+landing_page_image=Image.open(r"C:\Users\Pula Advisors\Desktop\Image-Segmentation-for-Forest-Cover-Mapping\Results\forest_cover.jpeg")
 
-st.image(landing_page_image,caption=None,use_column_width='auto')
+st.image(landing_page_image,caption=None,width=800)
 st.sidebar.success("Navigate App here")
-
-
-
-
 

@@ -16,7 +16,7 @@ This app utilizes semantic segmentation to delineate between forested and unfore
 #load ML model
 @st.cache_resource
 def load_model_once():
-    return load_model(r'C:\Users\Admin\Desktop\Capstone_project_research\hypertuned_unet_model.keras')
+    return load_model(r'C:\Users\Pula Advisors\Desktop\Image-Segmentation-for-Forest-Cover-Mapping\hypertuned_unet_model.keras')
 
 model = load_model_once()
 
