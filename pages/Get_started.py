@@ -4,6 +4,7 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img
 from PIL import Image
 import numpy as np
 import cv2
+import os
 
 
 st.title('Semantic segmentation of satellite images using a U-net model')
