@@ -16,19 +16,16 @@ This app utilizes semantic segmentation to delineate between forested and unfore
 
 @st.cache_resource
 def load_model_once():
-    # Define the path to the model file
-    model_path = os.path.join(
-        os.path.expanduser("~"),  # User's home directory
-        "Desktop",
-        "Image-Segmentation-for-Forest-Cover-Mapping",
-        "hypertuned_unet_model.keras"
-    )
-    # Ensure the model file exists
+    # Construct the path dynamically
+    model_path = os.path.join(os.getcwd(), "trained_models", "hypertuned_unet_model.keras")
+    print(f"Attempting to load model from: {model_path}")
+
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found at {model_path}")
 
-    # Load and return the model
     return load_model(model_path)
+
+model = load_model_once()
 
 # Load the model
 model = load_model_once()
