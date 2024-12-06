@@ -13,11 +13,19 @@ This app utilizes semantic segmentation to delineate between forested and unfore
          This allows us to produce more accurate forest maps and at greater speeds.""")
 
 
-#load ML model
 @st.cache_resource
 def load_model_once():
-    return load_model(r'C:\Users\Pula Advisors\Desktop\Image-Segmentation-for-Forest-Cover-Mapping\hypertuned_unet_model.keras')
+    # Define the path to the model file
+    model_path = os.path.join(os.getcwd(), "Image-Segmentation-for-Forest-Cover-Mapping", "hypertuned_unet_model.keras")
 
+    # Ensure the model file exists
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"Model file not found at {model_path}")
+
+    # Load and return the model
+    return load_model(model_path)
+
+# Load the model
 model = load_model_once()
 
 #function to preprocess the uploaded image
