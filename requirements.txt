@@ -2,3 +2,4 @@ numpy
 matplotlib
 tensorflow
 scikit-learn
+opencv-python-headless 
