@@ -25,6 +25,6 @@ if not os.path.exists(image_path):
 else:
     # Load and display the image
     landing_page_image = Image.open(image_path)
-    st.image(landing_page_image, caption=None, width=800)
+    st.image(landing_page_image, caption=None, width=600)
 st.sidebar.success("Navigate App here")
 
