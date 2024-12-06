@@ -1,6 +1,8 @@
 # Semantic Image Segmentation for Forest Cover Mapping
 This project implements an image segmentation model to map forest cover from satellite images using deep learning techniques. The goal is to accurately distinguish between forested and non-forested areas, providing insights into deforestation and land use patterns.
 
+Please find the link to the App Here: https://wamzmwangi-image-segmentation-for-forest-cover-map-home-mtuqnq.streamlit.app/
+
 Table of Contents
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
