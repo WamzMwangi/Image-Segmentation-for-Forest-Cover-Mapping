@@ -50,9 +50,16 @@ During training, each model was evaluated based on pixel accuracy, that is the p
 
 ## 5. Model Performance
 #### Performance of the FCN model
- <img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+The validation loss is higher than the train test loss,that is expected because validation data is unseen to the model. However, that would be a sign of overfitting. The achieved accuracy for the FCN model was 77%.
+
+<img src="./Results/FCN_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+
 #### Performance of the Unet Model
+The training and validation loss curves are tracking each other closely, meaning there is no significant over-fitting and the model is generalizing well.
+The achieved accuracy before hyperparameter tuning was 79%.
+
 <img src="./Results/Unet_learningcurves.png" alt="Learning curve of the FCN" width="350"/>
+
 
 ## 6. Contributing
 1. Fork & clone the repo locally
