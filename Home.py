@@ -14,8 +14,16 @@ st.write("""
 
          **Simply upload a satellite image and get accurate forest cover maps in just a click of a button!**
          """)
-landing_page_image=Image.open("Results\forest_cover.jpeg")
+# Dynamic path handling for the landing page image
+base_dir = os.getcwd()  # Get the current working directory
+image_path = os.path.join(base_dir, "Results", "forest_cover.jpeg")  # Construct the full path
 
-st.image(landing_page_image,caption=None,width=800)
+# Debug: Check if the path is correct
+if not os.path.exists(image_path):
+    st.error(f"Image file not found at: {image_path}")
+else:
+    # Load and display the image
+    landing_page_image = Image.open(image_path)
+    st.image(landing_page_image, caption=None, width=800)
 st.sidebar.success("Navigate App here")
 
